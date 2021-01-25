@@ -144,9 +144,9 @@ public class PlayerMovement : MonoBehaviour
             if (isCrouching)
             {
                 Vector3 temp = transform.localScale;
-                temp.y = 0.4f;
-                temp.x = 0.4f;
-                temp.z = 0.4f;
+                temp.y = 1f;
+                temp.x = 1f;
+                temp.z = 1f;
                 transform.localScale = temp;
 
                 if (temp.y <= 0.4f)
@@ -162,9 +162,9 @@ public class PlayerMovement : MonoBehaviour
             if (isCrouching)
             {
                 Vector3 temp = transform.localScale;
-                temp.y = 0.25f;
-                temp.x = 0.25f;
-                temp.z = 0.25f;
+                temp.y = 0.4f;
+                temp.x = 0.4f;
+                temp.z = 0.4f;
                 transform.localScale = temp;
 
                 
