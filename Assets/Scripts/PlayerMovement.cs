@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public bool isCrouching = false;
     public bool isCrouched = false;
     private float _timeSinceLastStepPlayed;
-    public Animator playerAnim;
+    public Animation playerAnim;
 
 
     Vector3 velocity;
@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         playerAudio = GetComponent<AudioSource>();
-        playerAnim = GetComponent<Animator>();
+        playerAnim = GetComponent<Animation>();
 
 
 
@@ -55,12 +55,14 @@ public class PlayerMovement : MonoBehaviour
         
         if (Input.GetKey(KeyCode.W))
         {
+            
             _timeSinceLastStepPlayed += Time.deltaTime;
             if (_timeSinceLastStepPlayed > 1)
             {
                 _timeSinceLastStepPlayed = 0;
+                
                 playerAudio.PlayOneShot(otherClip, 1.0f);
-                playerAnim.SetTrigger("zzz");
+                
             }
         }
         if (Input.GetKey(KeyCode.A))

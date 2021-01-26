@@ -12522,7 +12522,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1.00074
+  MinDistance: 1.999105
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -28105,6 +28105,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4399965989247248}
+  - component: {fileID: 1125227485648141}
+  - component: {fileID: 1125227485648142}
   m_Layer: 0
   m_Name: Bip001 L Thigh
   m_TagString: Untagged
@@ -28112,6 +28114,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!111 &1125227485648141
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125227485648140}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 24d1b47165b2d0044a3cad365524757f, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 24d1b47165b2d0044a3cad365524757f, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &1125227485648142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125227485648140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f18c9ed8ed4204ba37c7800b9b5be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1159279244123354
 GameObject:
   m_ObjectHideFlags: 0
@@ -28314,6 +28344,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4049702727733158}
+  - component: {fileID: 1293487002577005}
   m_Layer: 0
   m_Name: Bip001 R Thigh
   m_TagString: Untagged
@@ -28321,6 +28352,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!111 &1293487002577005
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293487002577004}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: ca6a906090b7a944e8f67c8e6a8d6345, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: ca6a906090b7a944e8f67c8e6a8d6345, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1321882153732234
 GameObject:
   m_ObjectHideFlags: 0
@@ -30535,9 +30582,9 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
-  m_Radius: 1
-  m_SlopeLimit: 45
+  m_Height: 1
+  m_Radius: 2
+  m_SlopeLimit: 40
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
