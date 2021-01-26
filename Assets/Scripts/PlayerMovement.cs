@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class PlayerMovement : MonoBehaviour
 
@@ -17,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public bool isCrouching = false;
     public bool isCrouched = false;
     private float _timeSinceLastStepPlayed;
+    public Animator playerAnim;
 
 
     Vector3 velocity;
@@ -31,8 +33,9 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         playerAudio = GetComponent<AudioSource>();
-       
-        
+        playerAnim = GetComponent<Animator>();
+
+
 
 
 
@@ -57,6 +60,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 _timeSinceLastStepPlayed = 0;
                 playerAudio.PlayOneShot(otherClip, 1.0f);
+                playerAnim.SetTrigger("zzz");
             }
         }
         if (Input.GetKey(KeyCode.A))
