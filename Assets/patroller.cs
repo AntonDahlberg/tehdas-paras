@@ -17,7 +17,10 @@ public class patroller : MonoBehaviour
         waypointIndex = 0;
         transform.LookAt(waypoints[waypointIndex].position);
         playerAnim = GetComponent<Animation>();
-        playerAnim.Play("zombikavelyoikea");
+        
+
+
+
 
 
     }
@@ -36,8 +39,12 @@ public class patroller : MonoBehaviour
     void Patrol()
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
-        
-    }
+        playerAnim.Play("zombikavelyoikea");
+
+
+
+
+    }    
     void indexpatrol()
     {
         waypointIndex++;
