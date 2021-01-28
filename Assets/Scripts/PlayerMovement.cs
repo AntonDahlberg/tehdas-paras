@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public bool isCrouching = false;
     public bool isCrouched = false;
     private float _timeSinceLastStepPlayed;
-    public Animation playerAnim;
+    
 
 
     Vector3 velocity;
@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         playerAudio = GetComponent<AudioSource>();
-        playerAnim = GetComponent<Animation>();
+        
 
 
 
