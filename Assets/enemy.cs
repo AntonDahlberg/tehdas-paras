@@ -31,8 +31,20 @@ public class enemy : MonoBehaviour
         {
             if (Health <= 0)
             {
+
+                
+                Enemyleft -= 1;
+                Spawn();
+                Destroy(gameObject);
+                
+
+                if (Enemyleft <= 0)
+                {
+                    Drop();
                     Destroy(gameObject);
-                    Drop();                    
+
+                }
+                                      
                    
 
                 
