@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class enemy : MonoBehaviour
 {
+    public Text more;
     public GameObject[] obj;
     //public GameObject obj;
     public float spawnMin;
@@ -23,7 +25,8 @@ public class enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        more.text = Enemyleft.ToString();
+
     }
     public void OnCollisionEnter(Collision other)
     {
@@ -36,6 +39,7 @@ public class enemy : MonoBehaviour
                 Enemyleft -= 1;
                 Spawn();
                 Destroy(gameObject);
+                Health += 100;
                 
 
                 if (Enemyleft <= 0)
@@ -68,6 +72,9 @@ public class enemy : MonoBehaviour
         
         Instantiate(obj[Random.Range(0, obj.GetLength(0))], transform.position, Quaternion.identity);
         Invoke("Spawn", Random.Range(spawnMin, spawnMax));
+        
+       
+
 
     }
     public void Youwon()

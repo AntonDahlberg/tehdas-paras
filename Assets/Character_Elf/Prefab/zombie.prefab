@@ -766,7 +766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34b6a6283cd65ee4199d271fa96cddd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seinan: {fileID: 0}
+  seinan: {fileID: 2723344372090706137, guid: b93abcbacd4bcac4fb6c8ddd960f55da, type: 3}
 --- !u!1 &2420759266392960654
 GameObject:
   m_ObjectHideFlags: 0
@@ -2980,6 +2980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52fb296bc89085c4cbf621fd1c394f5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  more: {fileID: 0}
   obj:
   - {fileID: 7695914714168841578}
   spawnMin: 1
