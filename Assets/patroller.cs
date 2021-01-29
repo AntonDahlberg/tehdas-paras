@@ -9,14 +9,14 @@ public class patroller : MonoBehaviour
 
     private int waypointIndex;
     private float dist;
-    private Animation playerAnim;
+    private Animator playerAnim;
 
     // Start is called before the first frame update
     void Start()
     {
         waypointIndex = 0;
         transform.LookAt(waypoints[waypointIndex].position);
-        playerAnim = GetComponent<Animation>();
+        playerAnim = GetComponent<Animator>();
         
 
 
