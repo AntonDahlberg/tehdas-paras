@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class enemy : MonoBehaviour
 {
+    
     public Text more;
     public GameObject[] obj;
     //public GameObject obj;
@@ -38,35 +39,21 @@ public class enemy : MonoBehaviour
                 
                 Enemyleft -= 1;
                 
-                Spawn();
+                
                 Destroy(gameObject);
-                
-                
+            }
 
 
-                if (Enemyleft <= 0)
-                {
-                    
-                    Drop();
-                    Destroy(gameObject);
-                    
 
-                }
-                
-                                      
-                   
-
-                
+            if (Enemyleft <= 0)
+            {
 
                     
+                 Drop();
+                                
 
             }
-           
-
-
-
-
-
+            
 
 
         }
