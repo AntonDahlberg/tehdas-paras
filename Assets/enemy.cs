@@ -37,17 +37,22 @@ public class enemy : MonoBehaviour
 
                 
                 Enemyleft -= 1;
+                
                 Spawn();
                 Destroy(gameObject);
-                Health += 100;
                 
+                
+
 
                 if (Enemyleft <= 0)
                 {
+                    
                     Drop();
                     Destroy(gameObject);
+                    
 
                 }
+                
                                       
                    
 
@@ -56,10 +61,11 @@ public class enemy : MonoBehaviour
                     
 
             }
-          
-            
-            
-            
+           
+
+
+
+
 
 
 

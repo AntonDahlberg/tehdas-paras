@@ -2986,7 +2986,7 @@ MonoBehaviour:
   spawnMin: 1
   spawnMax: 1
   Health: 100
-  Enemyleft: 5
+  Enemyleft: 2
   endgame: {fileID: 2998157514723941788, guid: 499f505cceb05c84398f98500e2f52ff, type: 3}
   key: {fileID: 1988695452500565094}
 --- !u!1 &7712642096260793673
