@@ -28127,6 +28127,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4612833977019560}
+  - component: {fileID: 1363593075308083}
+  - component: {fileID: 1363593075308084}
   m_Layer: 0
   m_Name: Bip001 L Calf
   m_TagString: Untagged
@@ -28134,6 +28136,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!111 &1363593075308083
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363593075308082}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: b569a6a0048932444a24e1dfdd0b8e0c, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: b569a6a0048932444a24e1dfdd0b8e0c, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &1363593075308084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363593075308082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 626da9c43b03b6b448161e8dffa5594b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1365771621460048
 GameObject:
   m_ObjectHideFlags: 0
@@ -28191,6 +28221,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4051237837839436}
+  - component: {fileID: 1394989539744887}
   m_Layer: 0
   m_Name: Bip001 R Calf
   m_TagString: Untagged
@@ -28198,6 +28229,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!111 &1394989539744887
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394989539744886}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: d1d51e26c7b87134dade62071bb12b19, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: d1d51e26c7b87134dade62071bb12b19, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1395734721126786
 GameObject:
   m_ObjectHideFlags: 0
@@ -29560,7 +29607,7 @@ Transform:
   - {fileID: 4182771730042672}
   m_Father: {fileID: 4399965989247248}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 16.879002}
 --- !u!4 &4617845597921680
 Transform:
   m_ObjectHideFlags: 0

@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
     private AudioSource playerAudio;
     public AudioClip sprintClip;
     public AudioClip jumpClip;
-
+    
 
     // Update is called once per frame
     void Start()
@@ -108,7 +108,8 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
 
                 playerAudio.PlayOneShot(jumpClip, 1.0f);
-            
+                
+
 
         }
         if (Input.GetKey("left shift"))

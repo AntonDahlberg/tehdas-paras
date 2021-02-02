@@ -68,7 +68,7 @@ public class enemy : MonoBehaviour
     void Spawn()
 
     {
-        Health += 100;
+        Health = 100;
         Instantiate(obj[Random.Range(0, obj.GetLength(0))], transform.position, Quaternion.identity);
         Invoke("Spawn", Random.Range(spawnMin, spawnMax));
         
