@@ -17,10 +17,12 @@ public class enemy : MonoBehaviour
     public GameObject endgame;
     playerHealth Playerhp;
     public GameObject key;
+    
     // Start is called before the first frame update
     void Start()
     {
         
+
     }
 
     // Update is called once per frame
@@ -38,21 +40,24 @@ public class enemy : MonoBehaviour
 
                 
                 Enemyleft -= 1;
-                
+
                 
                 Destroy(gameObject);
+                Spawn();
+                
             }
 
 
 
-            if (Enemyleft <= 0)
-            {
+                if (Enemyleft <= 0)
+                {
 
-                    
-                 Drop();
-                                
+                    Destroy(gameObject);
+                    Drop();
+                 
+                    gameObject.SetActive(false);
 
-            }
+                }
             
 
 
@@ -65,6 +70,7 @@ public class enemy : MonoBehaviour
         
         Instantiate(obj[Random.Range(0, obj.GetLength(0))], transform.position, Quaternion.identity);
         Invoke("Spawn", Random.Range(spawnMin, spawnMax));
+        Health = 100;
         
        
 
