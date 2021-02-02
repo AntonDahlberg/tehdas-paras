@@ -17,7 +17,8 @@ public class enemy : MonoBehaviour
     public GameObject endgame;
     playerHealth Playerhp;
     public GameObject key;
-    
+    public GameObject enemis;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,15 +50,15 @@ public class enemy : MonoBehaviour
 
 
 
-                if (Enemyleft <= 0)
-                {
+            if (Enemyleft <= 0)
+            {
+                Destroy(gameObject);
+                Drop();
 
-                    Destroy(gameObject);
-                    Drop();
-                 
-                    gameObject.SetActive(false);
+                enemis.gameObject.SetActive(false);
+               
 
-                }
+            }
             
 
 
@@ -67,10 +68,9 @@ public class enemy : MonoBehaviour
     void Spawn()
 
     {
-        
+        Health += 100;
         Instantiate(obj[Random.Range(0, obj.GetLength(0))], transform.position, Quaternion.identity);
         Invoke("Spawn", Random.Range(spawnMin, spawnMax));
-        Health = 100;
         
        
 
