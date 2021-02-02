@@ -18,23 +18,23 @@ public class animaatiovasen : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            playerAnim.Play("Vasen1anim");
+            playerAnim.Play("Runaus");
 
 
         }
         if (Input.GetKey(KeyCode.A))
         {
-            playerAnim.Play("Vasen1anim");
+            playerAnim.Play("Runaus");
 
         }
         if (Input.GetKey(KeyCode.S))
         {
-            playerAnim.Play("Vasen1anim");
+            playerAnim.Play("Runaus");
 
         }
         if (Input.GetKey(KeyCode.D))
         {
-            playerAnim.Play("Vasen1anim");
+            playerAnim.Play("Runaus");
 
         }
 
