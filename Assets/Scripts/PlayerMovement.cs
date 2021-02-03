@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
             if (_timeSinceLastStepPlayed > 1)
             {
                 _timeSinceLastStepPlayed = 0;
-                
+
                 playerAudio.PlayOneShot(otherClip, 1.0f);
                 playerAnime.Play("Runaus");
 

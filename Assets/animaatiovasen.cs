@@ -5,11 +5,11 @@ using UnityEngine.AI;
 
 public class animaatiovasen : MonoBehaviour
 {
-    private Animation playerAnim;
+    private Animator playerAnim;
     // Start is called before the first frame update
     void Start()
     {
-        playerAnim = GetComponent<Animation>();
+        playerAnim = GetComponent<Animator>();
 
     }
 
@@ -18,23 +18,44 @@ public class animaatiovasen : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            playerAnim.Play("Runaus");
+            playerAnim.SetBool("runn", true);
 
 
         }
         if (Input.GetKey(KeyCode.A))
         {
-            playerAnim.Play("Runaus");
+            playerAnim.SetBool("runn", true);
 
         }
         if (Input.GetKey(KeyCode.S))
         {
-            playerAnim.Play("Runaus");
+            playerAnim.SetBool("runn", true);
 
         }
         if (Input.GetKey(KeyCode.D))
         {
-            playerAnim.Play("Runaus");
+            playerAnim.SetBool("runn", true);
+
+        }
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            playerAnim.SetBool("runn", false);
+
+
+        }
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            playerAnim.SetBool("runn", false);
+
+        }
+        if (Input.GetKeyUp(KeyCode.S))
+        {
+            playerAnim.SetBool("runn", false);
+
+        }
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            playerAnim.SetBool("runn", false);
 
         }
 
