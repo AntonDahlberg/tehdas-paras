@@ -11,6 +11,7 @@ public class patroller : MonoBehaviour
     private float dist;
     private Animator playerAnim;
     private Animator playeranom;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -44,8 +45,7 @@ public class patroller : MonoBehaviour
     void Patrol()
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
-        playerAnim.Play("zombikavelyvasen");
-        playeranom.Play("zombikavelyoikea");
+        playerAnim.SetBool("Runnaus", true);
 
 
 

@@ -101,7 +101,7 @@ MonoBehaviour:
   leftLimit: -250
   rightlimit: 250
   uplimit: 50
-  damage: 25
+  damage: 50
 --- !u!54 &54796275822950168
 Rigidbody:
   m_ObjectHideFlags: 0

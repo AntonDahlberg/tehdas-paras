@@ -53,8 +53,7 @@ public class enemy : MonoBehaviour
             if (Enemyleft <= 0)
             {
                 Destroy(gameObject);
-                Drop();
-
+                Drop();               
                 enemis.gameObject.SetActive(false);
                
 

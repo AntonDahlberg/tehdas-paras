@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public bool isCrouching = false;
     public bool isCrouched = false;
     private float _timeSinceLastStepPlayed;
-    private Animation playerAnime;
+    private Animator playerAnime;
     
 
 
@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         playerAudio = GetComponent<AudioSource>();
-        playerAnime = GetComponent<Animation>();
+        playerAnime = GetComponent<Animator>();
         
 
 
@@ -63,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
                 _timeSinceLastStepPlayed = 0;
 
                 playerAudio.PlayOneShot(otherClip, 1.0f);
-                playerAnime.Play("Runaus");
+                
 
             }
         }
@@ -94,8 +94,7 @@ public class PlayerMovement : MonoBehaviour
                 playerAudio.PlayOneShot(otherClip, 1.0f);
             }
         }
-
-
+       
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
@@ -109,8 +108,29 @@ public class PlayerMovement : MonoBehaviour
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
 
+                
                 playerAudio.PlayOneShot(jumpClip, 1.0f);
                 
+
+
+
+        }
+        if (Input.GetKeyDown("space"))
+        {
+            
+
+            playerAnime.SetBool("JUMP", true);
+            
+
+
+
+
+        }
+        if (Input.GetButtonUp("Jump"))
+        {
+            
+            playerAnime.SetBool("JUMP", false);
+
 
 
         }
