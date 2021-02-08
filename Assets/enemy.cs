@@ -41,7 +41,7 @@ public class enemy : MonoBehaviour
             {
 
                 
-                Enemyleft -= 1;
+                
 
                 
                 Destroy(gameObject);
@@ -70,6 +70,7 @@ public class enemy : MonoBehaviour
 
     {
         transform.position = spawnpont.position;
+        Enemyleft -= 1;
         Instantiate(obj[Random.Range(0, obj.GetLength(0))], transform.position, Quaternion.identity);
         Invoke("Spawn", Random.Range(spawnMin, spawnMax));
         
