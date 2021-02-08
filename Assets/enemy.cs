@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class enemy : MonoBehaviour
 {
     
+    public Transform spawnpont;
     public Text more;
     public GameObject[] obj;
     //public GameObject obj;
@@ -55,7 +56,8 @@ public class enemy : MonoBehaviour
                 Destroy(gameObject);
                 Drop();               
                 enemis.gameObject.SetActive(false);
-               
+                
+
 
             }
             
@@ -67,7 +69,7 @@ public class enemy : MonoBehaviour
     void Spawn()
 
     {
-        Health = 100;
+        transform.position = spawnpont.position;
         Instantiate(obj[Random.Range(0, obj.GetLength(0))], transform.position, Quaternion.identity);
         Invoke("Spawn", Random.Range(spawnMin, spawnMax));
         
