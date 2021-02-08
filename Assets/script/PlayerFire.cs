@@ -68,6 +68,12 @@ public class PlayerFire : MonoBehaviour
 
 
         }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            StartCoroutine(reload());
+            return;
+
+        }
         void Fire()
             {
             Rigidbody instantiatedProjectile = Instantiate(projectile, transform.position, transform.rotation) as Rigidbody;

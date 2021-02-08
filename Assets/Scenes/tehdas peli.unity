@@ -17009,6 +17009,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2584359839021172301, guid: 690faeb113ad9f645a705f1bf0f00dcc,
         type: 3}
+      propertyPath: olla
+      value: 
+      objectReference: {fileID: 1474440716}
+    - target: {fileID: 2584359839021172301, guid: 690faeb113ad9f645a705f1bf0f00dcc,
+        type: 3}
       propertyPath: speed
       value: 300
       objectReference: {fileID: 0}
@@ -18656,6 +18661,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000013978381734, guid: fe9a19d4f0d796c40bf4fc6b69dd7b81,
     type: 3}
   m_PrefabInstance: {fileID: 1470761995}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1474440716 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2584359839021172297, guid: 690faeb113ad9f645a705f1bf0f00dcc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1314693827}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1479988558
 PrefabInstance:
