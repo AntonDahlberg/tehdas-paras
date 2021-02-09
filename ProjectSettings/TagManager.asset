@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - CanGrap
+  - bullet
+  - helthy
+  - Enemy
+  - bullet1
+  - seina1
+  - seina
+  - veitsi
   layers:
   - Default
   - TransparentFX

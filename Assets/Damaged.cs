@@ -23,7 +23,7 @@ public class Damaged : MonoBehaviour
 
 
 
-    public void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Enemy")
         {

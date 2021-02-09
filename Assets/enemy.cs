@@ -66,6 +66,39 @@ public class enemy : MonoBehaviour
         }
 
     }
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "veitsi")
+        {
+            if (Health <= 0)
+            {
+
+
+
+
+
+                Destroy(gameObject);
+                Spawn();
+
+            }
+
+
+
+            if (Enemyleft <= 0)
+            {
+                Destroy(gameObject);
+                Drop();
+                enemis.gameObject.SetActive(false);
+
+
+
+            }
+
+
+
+        }
+
+    }
     void Spawn()
 
     {
