@@ -28,7 +28,7 @@ public class Damaged : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             Enemyhp = other.transform.GetComponent<enemy>();
-            Enemyhp.Health -= damage;
+            Enemyhp.Health-=damage;
             
 
 
