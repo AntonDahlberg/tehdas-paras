@@ -19,12 +19,12 @@ public class enemy : MonoBehaviour
     playerHealth Playerhp;
     public GameObject key;
     public GameObject enemis;
-    private Animator anim;
+    private Animation anim;
 
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
+        anim = gameObject.GetComponent<Animation>();
 
 
     }
@@ -39,17 +39,17 @@ public class enemy : MonoBehaviour
     {
         if (other.gameObject.tag == "bullet")
         {
-            if (Health <= 0)
+            if  (Health <= 0)
             {
 
 
 
-
-               
+                Enemyleft -= 1;
+                anim.Play("kuole");
                 Destroy(gameObject);
-               
-                Spawn();
                 
+
+
             }
 
 
@@ -72,18 +72,18 @@ public class enemy : MonoBehaviour
     }
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "veitsi")
+        if (other.gameObject.tag == "veitsi") 
         {
             if (Health <= 0)
             {
 
 
 
-
-                
+                Enemyleft -= 1;
+                anim.Play("kuole");
                 Destroy(gameObject);
                 
-                Spawn();
+
 
             }
 
