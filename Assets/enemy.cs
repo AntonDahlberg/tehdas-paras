@@ -19,12 +19,12 @@ public class enemy : MonoBehaviour
     playerHealth Playerhp;
     public GameObject key;
     public GameObject enemis;
-    private Animator playerAnim;
+    private Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
-        playerAnim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
 
 
     }
@@ -45,9 +45,9 @@ public class enemy : MonoBehaviour
 
 
 
-                playerAnim.SetBool("kuolee", true);
+               
                 Destroy(gameObject);
-                playerAnim.SetBool("kuolee", false);
+               
                 Spawn();
                 
             }
@@ -56,9 +56,10 @@ public class enemy : MonoBehaviour
 
             if (Enemyleft <= 0)
             {
+                enemis.gameObject.SetActive(false);
                 Destroy(gameObject);
                 Drop();               
-                enemis.gameObject.SetActive(false);
+                
                 
 
 
@@ -79,9 +80,9 @@ public class enemy : MonoBehaviour
 
 
 
-                playerAnim.SetBool("kuolee", true);
+                
                 Destroy(gameObject);
-                playerAnim.SetBool("kuolee", false);
+                
                 Spawn();
 
             }
@@ -90,9 +91,10 @@ public class enemy : MonoBehaviour
 
             if (Enemyleft <= 0)
             {
+                enemis.gameObject.SetActive(false);
                 Destroy(gameObject);
                 Drop();
-                enemis.gameObject.SetActive(false);
+                
 
 
 
