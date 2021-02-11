@@ -19,11 +19,13 @@ public class enemy : MonoBehaviour
     playerHealth Playerhp;
     public GameObject key;
     public GameObject enemis;
+    private Animator playerAnim;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerAnim = GetComponent<Animator>();
+
 
     }
 
@@ -40,11 +42,12 @@ public class enemy : MonoBehaviour
             if (Health <= 0)
             {
 
-                
-                
 
-                
+
+
+                playerAnim.SetBool("kuolee", true);
                 Destroy(gameObject);
+                playerAnim.SetBool("kuolee", false);
                 Spawn();
                 
             }
@@ -76,8 +79,9 @@ public class enemy : MonoBehaviour
 
 
 
-
+                playerAnim.SetBool("kuolee", true);
                 Destroy(gameObject);
+                playerAnim.SetBool("kuolee", false);
                 Spawn();
 
             }
@@ -103,9 +107,10 @@ public class enemy : MonoBehaviour
 
     {
         
-        transform.position = spawnpont.position;
+        
         Enemyleft -= 1;
         Health += 100;
+        transform.position = spawnpont.position;
         Instantiate(obj[Random.Range(0, obj.GetLength(0))], transform.position, Quaternion.identity);
         Invoke("Spawn", Random.Range(spawnMin, spawnMax));
         
