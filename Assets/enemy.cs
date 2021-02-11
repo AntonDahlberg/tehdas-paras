@@ -19,12 +19,12 @@ public class enemy : MonoBehaviour
     playerHealth Playerhp;
     public GameObject key;
     public GameObject enemis;
-    private Animation anim;
+    private Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
-        anim = gameObject.GetComponent<Animation>();
+        anim = gameObject.GetComponent<Animator>();
 
 
     }
@@ -45,7 +45,7 @@ public class enemy : MonoBehaviour
 
 
                 Enemyleft -= 1;
-                anim.Play("kuole");
+                anim.SetBool("kuolee", true);
                 Destroy(gameObject);
                 
 
@@ -80,7 +80,7 @@ public class enemy : MonoBehaviour
 
 
                 Enemyleft -= 1;
-                anim.Play("kuole");
+                anim.SetBool("kuolee", true);
                 Destroy(gameObject);
                 
 
