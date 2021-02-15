@@ -12,6 +12,7 @@ TagManager:
   - seina1
   - seina
   - veitsi
+  - enemy1
   layers:
   - Default
   - TransparentFX

@@ -19,12 +19,12 @@ public class enemy : MonoBehaviour
     playerHealth Playerhp;
     public GameObject key;
     public GameObject enemis;
-    private Animation anim;
+   
 
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animation>();
+        
 
 
     }
@@ -45,7 +45,7 @@ public class enemy : MonoBehaviour
 
 
 
-                died();
+                
                 Enemyleft -= 1;
                 Destroy(gameObject);
                 
@@ -81,7 +81,7 @@ public class enemy : MonoBehaviour
 
 
 
-                died();
+                
                 Enemyleft -= 1;
                 Destroy(gameObject);
                 
@@ -107,11 +107,7 @@ public class enemy : MonoBehaviour
         }
 
     }
-    void died()
-    {
-        anim.Play("kuoleee");
-
-    }
+    
     void Spawn()
 
     {
