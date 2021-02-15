@@ -43,7 +43,7 @@ public class Detectscript : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.tag == "Player")
         {
             detected = true;
             target = other.gameObject;
