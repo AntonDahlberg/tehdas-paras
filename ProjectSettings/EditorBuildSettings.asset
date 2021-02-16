@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/menu.unity
+    guid: 4d41af8a08017bc41857d6318eb90830
+  - enabled: 1
     path: Assets/Scenes/you lose.unity
     guid: 431851ab2fec2324cbf75710d6c4dc08
   - enabled: 1
-    path: Assets/Scenes/menu.unity
-    guid: 4d41af8a08017bc41857d6318eb90830
+    path: Assets/Scenes/tehdas peli.unity
+    guid: 5a463281e6e238742a45430f11e82829
   m_configObjects: {}
