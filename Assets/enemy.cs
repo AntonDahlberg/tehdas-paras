@@ -59,7 +59,7 @@ public class enemy : MonoBehaviour
             {
                 enemis.gameObject.SetActive(false);
                 Destroy(gameObject);
-                Drop();               
+                              
                 
                 
 
@@ -95,7 +95,7 @@ public class enemy : MonoBehaviour
             {
                 enemis.gameObject.SetActive(false);
                 Destroy(gameObject);
-                Drop();
+                
                 
 
 

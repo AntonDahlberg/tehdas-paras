@@ -65,12 +65,12 @@ public class DoorController : MonoBehaviour
         {
             if (doorState == DoorState.Opened)
             {
-                txtToDisplay.GetComponent<Text>().text = "Press 'E' to Close";
+                txtToDisplay.GetComponent<Text>().text = "Press 'F' to Close";
                 doorCollider.enabled = false;
             }
             else if (doorState == DoorState.Closed || gotKey)
             {
-                txtToDisplay.GetComponent<Text>().text = "Press 'E' to Open";
+                txtToDisplay.GetComponent<Text>().text = "Press 'F' to Open";
                 doorCollider.enabled = true;
             }
             else if (doorState == DoorState.Jammed)
@@ -80,7 +80,7 @@ public class DoorController : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && playerInZone)
+        if (Input.GetKeyDown(KeyCode.F) && playerInZone)
         {
             doorOpened = !doorOpened;           //The toggle function of door to open/close
 
