@@ -8,7 +8,7 @@ public class enemy : MonoBehaviour
 {
     
     public Transform spawnpont;
-    public Text more;
+    
     public GameObject[] obj;
     //public GameObject obj;
     public float spawnMin;
@@ -32,7 +32,7 @@ public class enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        more.text = Enemyleft.ToString();
+        
 
     }
     public void OnCollisionEnter(Collision other)

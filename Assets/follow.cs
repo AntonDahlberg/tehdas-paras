@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class follow : MonoBehaviour
 {
-    public Transform target;
+    bool detected;
+    GameObject target;
     public Transform enemy;
    
     
@@ -17,7 +18,22 @@ public class follow : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (detected)
+        {
+            enemy.LookAt(target.transform);
 
-        enemy.LookAt(target.transform);
+        }
+            
+
+           
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            detected = true;
+            target = other.gameObject;
+
+        }
     }
 }
