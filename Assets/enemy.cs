@@ -19,7 +19,10 @@ public class enemy : MonoBehaviour
     playerHealth Playerhp;
     public GameObject key;
     public GameObject enemis;
+    public int pointa;
+    playerHealth Playerp;
     
+
 
     // Start is called before the first frame update
     void Start()
@@ -47,8 +50,12 @@ public class enemy : MonoBehaviour
 
                 died();
                 Enemyleft -= 1;
-                Destroy(gameObject);
                 
+                Destroy(gameObject);
+                Playerp.GetComponent<playerHealth>().KillEnemy();
+
+
+
 
 
             }
@@ -81,10 +88,15 @@ public class enemy : MonoBehaviour
 
 
 
-                
+
+                died();
+
                 Enemyleft -= 1;
+               
                 Destroy(gameObject);
-                
+                Playerp.GetComponent<playerHealth>().KillEnemy();
+
+
 
 
             }
