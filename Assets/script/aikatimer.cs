@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class aikatimer : MonoBehaviour
 {
-    float currentTime = 0f;
-    float startTime = 60f;
+    public float currentTime = 0f;
+    public float startTime = 60f;
     [SerializeField] Text countdownText;
     // Start is called before the first frame update
     void Start()
@@ -20,6 +20,7 @@ public class aikatimer : MonoBehaviour
     {
         currentTime -= 1 * Time.deltaTime;
         countdownText.text = currentTime.ToString ("0");
+       
 
         if (currentTime <= 0)
         {
