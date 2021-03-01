@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public bool isCrouching = false;
     public bool isCrouched = false;
     private float _timeSinceLastStepPlayed;
-    private Animator playerAnime;
+    
     
 
 
@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         playerAudio = GetComponent<AudioSource>();
-        playerAnime = GetComponent<Animator>();
+        
         
 
 
@@ -115,25 +115,7 @@ public class PlayerMovement : MonoBehaviour
 
 
         }
-        if (Input.GetKeyDown("space"))
-        {
-            
-
-            playerAnime.SetBool("JUMP", true);
-            
-
-
-
-
-        }
-        if (Input.GetButtonUp("Jump"))
-        {
-            
-            playerAnime.SetBool("JUMP", false);
-
-
-
-        }
+        
         if (Input.GetKey("left shift"))
         {
             speed = 15;
