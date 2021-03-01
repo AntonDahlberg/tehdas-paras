@@ -19,8 +19,7 @@ public class enemy : MonoBehaviour
     playerHealth Playerhp;
     public GameObject key;
     public GameObject enemis;
-    public int pointa;
-    playerHealth Playerp;
+    
     
 
 
@@ -52,7 +51,7 @@ public class enemy : MonoBehaviour
                 Enemyleft -= 1;
                 
                 Destroy(gameObject);
-                Playerp.GetComponent<playerHealth>().KillEnemy();
+                
 
 
 
@@ -92,9 +91,9 @@ public class enemy : MonoBehaviour
                 died();
 
                 Enemyleft -= 1;
-               
+                ScoreScript.scoreValue += 10;
                 Destroy(gameObject);
-                Playerp.GetComponent<playerHealth>().KillEnemy();
+                
 
 
 

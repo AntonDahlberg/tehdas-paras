@@ -7,11 +7,11 @@ using UnityEngine.UI;
 public class playerHealth : MonoBehaviour
 {
     public int Health;
-    public int points;
+    
     public int Live;
     public Text heal;
     public Text live;
-    public Text Pont;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +24,7 @@ public class playerHealth : MonoBehaviour
     {
         heal.text = Health.ToString();
         live.text = Live.ToString();
-        Pont.text = points.ToString();
+        
 
     }
     public void OnCollisionEnter(Collision other)
@@ -50,9 +50,5 @@ public class playerHealth : MonoBehaviour
     {
         SceneManager.LoadScene("you lose");
     }
-    public void KillEnemy()
-    {
-        points = points + 5;
-        
-    }
+   
 }

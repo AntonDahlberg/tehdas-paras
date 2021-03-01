@@ -9165,11 +9165,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 100
-  points: 0
   Live: 2
   heal: {fileID: 836380764}
   live: {fileID: 1647206728}
-  Pont: {fileID: 1686164839}
 --- !u!114 &757071691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20944,6 +20942,7 @@ GameObject:
   - component: {fileID: 1686164838}
   - component: {fileID: 1686164840}
   - component: {fileID: 1686164839}
+  - component: {fileID: 1686164841}
   m_Layer: 5
   m_Name: pointtt
   m_TagString: Untagged
@@ -21011,6 +21010,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1686164837}
   m_CullTransparentMesh: 0
+--- !u!114 &1686164841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686164837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d106d3aed75f0b842941c3464ee7252f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 1686164839}
 --- !u!1001 &1687518974
 PrefabInstance:
   m_ObjectHideFlags: 0
