@@ -49,7 +49,7 @@ public class enemy : MonoBehaviour
 
                 died();
                 Enemyleft -= 1;
-                
+                ScoreScript.scoreValue += 10;
                 Destroy(gameObject);
                 
 
