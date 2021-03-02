@@ -48,10 +48,13 @@ public class enemy : MonoBehaviour
 
 
                 died();
-                Enemyleft -= 1;
+                
                 ScoreScript.scoreValue += 10;
+                Spawn();
                 Destroy(gameObject);
                 
+
+
 
 
 
@@ -90,10 +93,13 @@ public class enemy : MonoBehaviour
 
                 died();
 
-                Enemyleft -= 1;
+                
                 ScoreScript.scoreValue += 10;
+                Spawn();
                 Destroy(gameObject);
                 
+
+
 
 
 
