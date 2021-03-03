@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class follow : MonoBehaviour
+public class target1 : MonoBehaviour
 {
     public bool detected;
-     public GameObject target;
+    public GameObject target;
     public Transform enemy;
-   
-    
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -23,9 +23,9 @@ public class follow : MonoBehaviour
             enemy.LookAt(target.transform);
 
         }
-            
 
-           
+
+
     }
     private void OnTriggerEnter(Collider other)
     {

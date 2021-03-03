@@ -50,7 +50,7 @@ public class enemy : MonoBehaviour
                 died();
                 
                 ScoreScript.scoreValue += 10;
-                Spawn();
+                
                 Destroy(gameObject);
                 
 
@@ -95,7 +95,7 @@ public class enemy : MonoBehaviour
 
                 
                 ScoreScript.scoreValue += 10;
-                Spawn();
+                
                 Destroy(gameObject);
                 
 

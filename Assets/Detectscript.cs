@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Detectscript : MonoBehaviour
 {
-    bool detected;
+     public bool detected;
     GameObject target;
     public Transform enemy;
     public GameObject bullet;
@@ -43,7 +43,7 @@ public class Detectscript : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             detected = true;
             target = other.gameObject;
