@@ -26,7 +26,7 @@ public class aikatimer : MonoBehaviour
         {
             currentTime = 0;
             SceneManager.LoadScene("you lose");
-            ScoreScript.scoreValue -= 10;
+            ScoreScript.scoreValue -= 5;
 
         }
                
