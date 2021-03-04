@@ -5474,7 +5474,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: bac9e49d4cfa7cf49bed8e73c632626f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.21
+      value: 0.898
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bac9e49d4cfa7cf49bed8e73c632626f,
         type: 3}
@@ -9590,7 +9590,7 @@ MonoBehaviour:
   crouchWalkSpeed: 5
   isCrouching: 0
   isCrouched: 0
-  isGrounded: 1
+  isGrounded: 0
   otherClip: {fileID: 8300000, guid: e9714160ce34f2b4ab63ff8c27bd68e1, type: 3}
   sprintClip: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
   jumpClip: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}

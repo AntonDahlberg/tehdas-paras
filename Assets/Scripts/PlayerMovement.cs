@@ -106,12 +106,10 @@ public class PlayerMovement : MonoBehaviour
         //if space is pressed, jump
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
+            
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
             isGrounded = false;
-
-
-
-                playerAudio.PlayOneShot(jumpClip, 1.0f);
+            playerAudio.PlayOneShot(jumpClip, 1.0f);
                 
 
 
