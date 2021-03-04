@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
 
 
     Vector3 velocity;
-    bool isGrounded;
+    public bool isGrounded = true;
     public AudioClip otherClip;
     private AudioSource playerAudio;
     public AudioClip sprintClip;
@@ -107,8 +107,10 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            isGrounded = false;
 
-                
+
+
                 playerAudio.PlayOneShot(jumpClip, 1.0f);
                 
 
@@ -181,6 +183,17 @@ public class PlayerMovement : MonoBehaviour
                 
             }
         }
+    }
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+           
+        }
+        
+
+
     }
 
 
