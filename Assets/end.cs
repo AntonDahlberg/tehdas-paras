@@ -14,7 +14,7 @@ public class end : MonoBehaviour
         {
             endgame.gameObject.SetActive(true);
             aika.gameObject.SetActive(false);
-            ScoreScript.scoreValue += 5;
+            ScoreScript.scoreValue += 25;
             Destroy(gameObject);
             Cursor.lockState = CursorLockMode.None;
             
