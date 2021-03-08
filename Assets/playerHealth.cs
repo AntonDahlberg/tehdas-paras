@@ -13,6 +13,7 @@ public class playerHealth : MonoBehaviour
     public Text live;
     public GameObject endgame;
     public GameObject aika;
+    public GameObject camera2;
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +51,7 @@ public class playerHealth : MonoBehaviour
     }
     public void Youlose()
     {
+        camera2.gameObject.SetActive(true);
         endgame.gameObject.SetActive(true);
         aika.gameObject.SetActive(false);
         ScoreScript.scoreValue -= 10;
