@@ -11,7 +11,9 @@ public class playerHealth : MonoBehaviour
     public int Live;
     public Text heal;
     public Text live;
-    
+    public GameObject endgame;
+    public GameObject aika;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,7 +50,11 @@ public class playerHealth : MonoBehaviour
     }
     public void Youlose()
     {
-        SceneManager.LoadScene("you lose");
+        endgame.gameObject.SetActive(true);
+        aika.gameObject.SetActive(false);
+        ScoreScript.scoreValue -= 10;
+        Destroy(gameObject);
+        Cursor.lockState = CursorLockMode.None;
     }
    
 }
