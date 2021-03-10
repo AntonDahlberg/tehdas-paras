@@ -19,6 +19,7 @@ public class PauseControl : MonoBehaviour
     {
         if(gameIsPaused)
         {
+            
             Time.timeScale = 0f;
         }
         else 
