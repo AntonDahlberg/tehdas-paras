@@ -5,7 +5,7 @@ using UnityEngine;
 public class follow : MonoBehaviour
 {
     public bool detected;
-     public GameObject target;
+    public GameObject target;
     public Transform enemy;
    
     
