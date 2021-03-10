@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject endgame;
+    public GameObject endgame2;
     void Start()
     {
 
@@ -14,6 +16,17 @@ public class MainMenu : MonoBehaviour
     public void  Playgame ()
     {
         SceneManager.LoadScene("tehdas peli");
+    }
+    public void Playgame1 ()
+    {
+        endgame.gameObject.SetActive(true);
+        endgame2.gameObject.SetActive(false);
+    }
+    public void Playgame2 ()
+    {
+
+        endgame.gameObject.SetActive(false);
+        endgame2.gameObject.SetActive(true);
     }
     public void QuitGame ()
     {
