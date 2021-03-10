@@ -8,7 +8,7 @@ public class KeyController : MonoBehaviour
     BoxCollider keyCollider;
     Rigidbody keyRB;
     public Text txtToDisplay;
-    public DoorController DC;
+    public DoorController1 DC;
 
     /// <summary>
     /// Incase user forgets to uncheck isTrigger in box collider
