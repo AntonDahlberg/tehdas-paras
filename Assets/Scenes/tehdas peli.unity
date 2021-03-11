@@ -5966,6 +5966,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a694ecb06584e8c4294aaa45e3411c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endgame: {fileID: 0}
+  endgame2: {fileID: 0}
 --- !u!114 &472224032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8856,6 +8858,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a694ecb06584e8c4294aaa45e3411c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endgame: {fileID: 0}
+  endgame2: {fileID: 0}
 --- !u!1001 &710766559
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13109,6 +13113,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a694ecb06584e8c4294aaa45e3411c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endgame: {fileID: 0}
+  endgame2: {fileID: 0}
 --- !u!114 &967261071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14378,7 +14384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detected: 0
-  target: {fileID: 757071687}
+  target: {fileID: 0}
   enemy: {fileID: 1101830104}
 --- !u!1001 &1111245556
 PrefabInstance:
@@ -15263,7 +15269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detected: 0
-  target: {fileID: 757071687}
+  target: {fileID: 0}
   enemy: {fileID: 1177100888}
 --- !u!1001 &1177825738
 PrefabInstance:
@@ -15803,7 +15809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detected: 0
-  target: {fileID: 757071687}
+  target: {fileID: 0}
   enemy: {fileID: 1204976030}
 --- !u!1 &1221619832
 GameObject:
@@ -15857,6 +15863,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a694ecb06584e8c4294aaa45e3411c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endgame: {fileID: 0}
+  endgame2: {fileID: 0}
 --- !u!114 &1221619835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16849,7 +16857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detected: 0
-  target: {fileID: 757071687}
+  target: {fileID: 0}
   enemy: {fileID: 1295441067}
 --- !u!1001 &1296812210
 PrefabInstance:
@@ -17942,7 +17950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detected: 0
-  target: {fileID: 757071687}
+  target: {fileID: 0}
   enemy: {fileID: 1177100888}
 --- !u!1001 &1347712524
 PrefabInstance:
@@ -19024,6 +19032,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a694ecb06584e8c4294aaa45e3411c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endgame: {fileID: 0}
+  endgame2: {fileID: 0}
 --- !u!1001 &1426250572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20880,6 +20890,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a694ecb06584e8c4294aaa45e3411c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endgame: {fileID: 0}
+  endgame2: {fileID: 0}
 --- !u!114 &1546200990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23423,7 +23435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detected: 0
-  target: {fileID: 757071687}
+  target: {fileID: 0}
   enemy: {fileID: 1709479464}
 --- !u!1001 &1713845531
 PrefabInstance:
@@ -24115,6 +24127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a694ecb06584e8c4294aaa45e3411c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endgame: {fileID: 0}
+  endgame2: {fileID: 0}
 --- !u!114 &1770028100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26890,6 +26904,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a694ecb06584e8c4294aaa45e3411c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endgame: {fileID: 0}
+  endgame2: {fileID: 0}
 --- !u!114 &1925880266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28470,20 +28486,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2009921899955666747}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &2022123665
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2022123662}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 181.23436, y: 43.980206, z: 153.0332}
-  m_Center: {x: -90.117325, y: 21.490114, z: 76.016685}
---- !u!114 &2022123666
+--- !u!114 &2022123663
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -28498,6 +28501,19 @@ MonoBehaviour:
   detected: 0
   target: {fileID: 757071687}
   enemy: {fileID: 1177100888}
+--- !u!65 &2022123665
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022123662}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 181.23436, y: 43.980206, z: 153.0332}
+  m_Center: {x: -90.117325, y: 21.490114, z: 76.016685}
 --- !u!1001 &2027311414
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29236,6 +29252,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a694ecb06584e8c4294aaa45e3411c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endgame: {fileID: 0}
+  endgame2: {fileID: 0}
 --- !u!114 &2066820076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29338,7 +29356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detected: 0
-  target: {fileID: 757071687}
+  target: {fileID: 0}
   enemy: {fileID: 1709479464}
 --- !u!65 &2073952310
 BoxCollider:
