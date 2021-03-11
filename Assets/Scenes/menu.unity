@@ -835,7 +835,7 @@ MonoBehaviour:
   m_Text: "W =move  worward \tmouse1 = fire\tmouse2 = rapidfire    \nA = move left\t\tR
     = reload\tQ = throw weapon\t        E = pick up weapon\ns = move backward\tF
     = open/close door \t               C = crounch/kyykky\nd = move right\t\tLShift
-    = run\n"
+    = run\nm = switch minimap\n"
 --- !u!222 &1015197341
 CanvasRenderer:
   m_ObjectHideFlags: 0

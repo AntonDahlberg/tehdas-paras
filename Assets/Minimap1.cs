@@ -18,7 +18,7 @@ public class Minimap1 : MonoBehaviour
 	}
 	void Update()
 	{
-		if (Input.GetKey(KeyCode.N))
+		if (Input.GetKey(KeyCode.M))
 		{
 			ahaa.gameObject.SetActive(false);
 			endgame.gameObject.SetActive(true);
