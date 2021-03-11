@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Minimap : MonoBehaviour
+public class Minimap1 : MonoBehaviour
 {
-
 	public Transform player;
 	public GameObject endgame;
 	public GameObject ahaa;
@@ -14,18 +13,15 @@ public class Minimap : MonoBehaviour
 		Vector3 newPosition = player.position;
 		newPosition.y = transform.position.y;
 		transform.position = newPosition;
-		
 
-
-
+		transform.rotation = Quaternion.Euler(90f, player.eulerAngles.y, 0f);
 	}
 	void Update()
-    {
+	{
 		if (Input.GetKey(KeyCode.N))
-        {
-			ahaa.gameObject.SetActive(true);
-			endgame.gameObject.SetActive(false);
-			
+		{
+			ahaa.gameObject.SetActive(false);
+			endgame.gameObject.SetActive(true);
 
 		}
 
