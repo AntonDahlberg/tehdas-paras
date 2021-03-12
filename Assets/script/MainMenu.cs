@@ -18,6 +18,10 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("tehdas peli");
     }
+    public void menu2()
+    {
+        SceneManager.LoadScene("menu");
+    }
     public void Playgame1 ()
     {
         endgame.gameObject.SetActive(true);
