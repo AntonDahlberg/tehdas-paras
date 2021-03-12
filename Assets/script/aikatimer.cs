@@ -8,6 +8,7 @@ public class aikatimer : MonoBehaviour
     public float currentTime = 0f;
     public float startTime = 60f;
     [SerializeField] Text countdownText;
+    public GameObject endgame;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +26,7 @@ public class aikatimer : MonoBehaviour
         if (currentTime <= 0)
         {
             currentTime = 0;
-            SceneManager.LoadScene("you lose");
+            endgame.gameObject.SetActive(true);
             ScoreScript.scoreValue -= 5;
 
         }

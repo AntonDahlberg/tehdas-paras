@@ -24547,6 +24547,7 @@ MonoBehaviour:
   currentTime: 0
   startTime: 60
   countdownText: {fileID: 1660812703}
+  endgame: {fileID: 2066820074}
 --- !u!1 &1679270862
 GameObject:
   m_ObjectHideFlags: 0
