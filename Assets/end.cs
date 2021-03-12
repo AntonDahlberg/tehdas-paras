@@ -17,7 +17,8 @@ public class end : MonoBehaviour
             ScoreScript.scoreValue += 25;
             Destroy(gameObject);
             Cursor.lockState = CursorLockMode.None;
-            
+            Cursor.visible = true;
+
         }
     }
 }

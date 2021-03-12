@@ -57,6 +57,7 @@ public class playerHealth : MonoBehaviour
         ScoreScript.scoreValue -= 10;
         Destroy(gameObject);
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
    
 }
