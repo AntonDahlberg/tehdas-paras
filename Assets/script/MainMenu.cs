@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
 
-        Cursor.lockState = CursorLockMode.None;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void  Playgame ()
