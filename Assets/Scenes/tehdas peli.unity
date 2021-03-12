@@ -16202,6 +16202,23 @@ MonoBehaviour:
   detected: 0
   target: {fileID: 757071687}
   enemy: {fileID: 1177100888}
+--- !u!320 &1177100890
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177100882}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 08fe9e2d397014f499d12913790ea3aa, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!1001 &1177825738
 PrefabInstance:
   m_ObjectHideFlags: 0
