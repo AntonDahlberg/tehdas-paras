@@ -7,8 +7,8 @@ public class WeaponPick : MonoBehaviour
     public Transform equipPosition;
     public float distance = 10f;
     GameObject currentWeapon;
-    public GameObject weapon1;
     public GameObject weapon;
+    public GameObject weapon1;
     GameObject wp;
     
 
@@ -23,7 +23,7 @@ public class WeaponPick : MonoBehaviour
             {
                 
                 PickUp();
-               
+                PickUp();
             }
         }
         if(currentWeapon != null)
@@ -59,15 +59,12 @@ public class WeaponPick : MonoBehaviour
     }
     private void Drop()
     {
-        weapon1.gameObject.SetActive(true);
         weapon.gameObject.SetActive(true);
+        weapon1.gameObject.SetActive(true);
         currentWeapon.transform.parent = null;
         currentWeapon.GetComponent<Rigidbody>().isKinematic = false;
         currentWeapon = null;
         
-        
-
-
 
     }
 
