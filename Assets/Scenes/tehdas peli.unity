@@ -7207,7 +7207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b04281c44aa7cc043ae3ecda23951f5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedWeapon: 1
+  selectedWeapon: 0
 --- !u!1001 &556209124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10678,6 +10678,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   equipPosition: {fileID: 550474458}
   distance: 10
+  weapon1: {fileID: 1376379023}
+  weapon: {fileID: 699780772}
 --- !u!114 &757071690
 MonoBehaviour:
   m_ObjectHideFlags: 0
