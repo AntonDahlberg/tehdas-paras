@@ -845,7 +845,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "W =move  worward \tmouse1 = fire\tmouse2 = rapidfire    \nA = move left\t\tR
     = reload\tQ = throw weapon\t        E = pick up weapon\ns = move backward\tF
-    = open/close door \t               C = crounch/kyykky\nd = move right\t\tLShift
+    = open/close door \t               LCtrl = crounch/kyykky\nd = move right\t\tLShift
     = run\nm = switch minimap\tspace = jump\n"
 --- !u!222 &1015197341
 CanvasRenderer:
